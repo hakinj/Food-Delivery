@@ -4,7 +4,7 @@ import React, {createContext, useContext, useEffect} from 'react';
 
 
     export const ProtectedRiderRoutes = createContext();
-function ProtectRiderProvider() {
+function ProtectRiderProvider({children}) {
     
     
     

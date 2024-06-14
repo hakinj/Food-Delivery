@@ -17,6 +17,8 @@ import Progressbar from './modules/user/layout/Progressbar';
 import Success from './modules/user/layout/Success';
 import EmailforPassword from './modules/user/layout/Emailforpassword';
 import ProtectedRoutesProvider from './modules/context/ProtectedRoutes';
+import ProtectAdminProvider from './modules/context/ProtectAdminProvider';
+import ProtectRiderProvider from './modules/context/ProtectRiderProvider';
 import AdminDash from './modules/admin/pages/AdminDash';
 import RiderDash from './modules/rider/pages/RiderDash';
 
@@ -26,7 +28,7 @@ import RiderDash from './modules/rider/pages/RiderDash';
 export const router = createBrowserRouter([
 
     {
-        path: '/homepage',
+        path: '/',
         element: <Homepage/>
 
     },

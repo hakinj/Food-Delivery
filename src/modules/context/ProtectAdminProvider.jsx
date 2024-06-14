@@ -3,11 +3,8 @@ import React, {createContext, useContext, useEffect} from 'react';
     import { useNavigate } from 'react-router-dom';
 
 
-    export const ProtectedAminRoutes = createContext();
-function ProtectAdminProvider() {
-    
-    
-    
+    export const ProtectedAdminRoutes = createContext();
+function ProtectAdminProvider({children}) {
     
     
         const navigate = useNavigate()
