@@ -17,7 +17,7 @@ function HomeNav() {
                         
                         <Link to='/adminlogin'><b>Admin</b></Link>
                         <Link to='/loginpage'><b>Make-Order</b></Link>
-                        <Link to='/riderpage'><b>Rider</b></Link>
+                        <Link to='/riderlogin'><b>Rider</b></Link>
                         
                        
                         

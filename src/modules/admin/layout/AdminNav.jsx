@@ -14,15 +14,15 @@ function AdminNav() {
 
                     <div>
                         <div className='flex line text-white none gap-20 '>
-                        <Link to='/admindashboard'><b>Home</b></Link>
-                        <Link to='/riderpage'><b>User</b></Link>
-                        <Link to='ridersignup'><b>Rider</b></Link>
+                        <Link to='/adminsignup'><b>Home</b></Link>
+                        <Link to='/loginpage'><b>User</b></Link>
+                        <Link to='/ridersignup'><b>Rider</b></Link>
                             
                             <div class="dropdown">
                                 <button class="dropbtn"><b>Service</b></button>
                                 <div class="dropdown-content">
                                 <Link to='/loginpage'><b>user</b></Link>
-                                <Link to='ridersignup'><b>Rider</b></Link>
+                                <Link to='/ridersignup'><b>Rider</b></Link>
                                   
                                 </div>
                             </div>

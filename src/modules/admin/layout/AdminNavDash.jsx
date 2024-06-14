@@ -21,7 +21,7 @@ function AdminNavDash() {
                                 <button class="dropbtn"><b>Service</b></button>
                                 <div class="dropdown-content">
                                 <Link to='/#'><b>Orders</b></Link>
-                                <Link to='/riderpage'><b>Riders</b></Link>
+                                <Link to='/ridersignup'><b>Riders</b></Link>
                                   
                                 </div>
                             </div>
