@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import navlogo2 from '../../user/bgimage/navlogo2.jpg'
+import { Link } from 'react-router-dom';
 
 
 function HomeNav() {
@@ -13,11 +14,13 @@ function HomeNav() {
 
                 <div>
                     <div className='flex line text-white none gap-20 '>
-                        <a href="/adminlogin"> <b>Admin</b></a>
+                        
+                        <Link to='/adminlogin'><b>Admin</b></Link>
+                        <Link to='/loginpage'><b>Make-Order</b></Link>
+                        <Link to='/riderpage'><b>Rider</b></Link>
                         
                        
-                        <a href="loginpage"><b>Make-Order</b></a>
-                        <a href="/riderlogin"><b>Rider</b></a>
+                        
                     </div>
                     <div></div>
                 </div>

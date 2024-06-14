@@ -14,18 +14,20 @@ function AdminNavDash() {
 
                     <div>
                         <div className='flex line text-white none gap-20 '>
-                            <a href=""> <b>Home</b></a>
+                        <Link to='/admindashboard'><b>Home</b></Link>
+                        <Link to='/riderpage'><b>User</b></Link>
+                         
                             <div class="dropdown">
                                 <button class="dropbtn"><b>Service</b></button>
                                 <div class="dropdown-content">
-                                    <a href="#">Orders</a>
-                                    <a href="#">Rider</a>
+                                <Link to='/#'><b>Orders</b></Link>
+                                <Link to='/riderpage'><b>Riders</b></Link>
                                   
                                 </div>
                             </div>
-                           
-                            <a href="/foodtypeinputpage"><b>Foodtype</b></a>
-                            <a href=""><b>Settings</b></a>
+                            <Link to='/foodtypeinputpage'><b>Foodtype</b></Link>
+                            <Link to='/foodtypeinputpage'><b>Settings</b></Link>
+                          
                         </div>
                         <div></div>
                     </div>
