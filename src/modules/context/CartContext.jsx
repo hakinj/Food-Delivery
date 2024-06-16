@@ -9,9 +9,8 @@ export const CartContext = createContext()
 function CartProvider({children}) {
     const [cart, setCart] = useState(localStorage.getItem("cartitem") ? JSON.parse(localStorage.getItem("cartitem")) : [])
     const {currentUserLoggedIn, user} = useGetCurrentUser();
-    const { Admin, currentAdminLoggedIn} = useGetCurrentAdmin()
-    const {Rider, currentRiderLoggedIn} = useGetCurrentRider()
-
+    // const { currentAdminLoggedIn, Admin} = useGetCurrentAdmin()
+    // const { currentRiderLoggedIn, Rider} = useGetCurrentRider()
 
     useEffect(()=>{
 
@@ -19,7 +18,7 @@ function CartProvider({children}) {
     }, [cart])
 
     return (
-        <CartContext.Provider value={{currentUserLoggedIn, user, cart, setCart, Rider, Admin, currentAdminLoggedIn, currentRiderLoggedIn }}>
+        <CartContext.Provider value={{ user, cart, setCart}}>
             {children}
         </CartContext.Provider>
 

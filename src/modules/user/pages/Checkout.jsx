@@ -97,7 +97,7 @@ function Checkout() {
 
             <div className='h-auto pb-20 text-center italic '>
                 <h1 className='-mt-8'>CheckOut</h1>
-                <form onSubmit={{}} className='flex flex-column items-center gap-2' action="">
+                <form  className='flex flex-column items-center gap-2' action="">
 
 
                     <div className='mb-2' style={{ fontSize: '2rem' }}>

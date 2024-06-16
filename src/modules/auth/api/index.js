@@ -106,7 +106,7 @@ export const adminLogin = async ( payload) => {
         });
        
         const result = await response.data.loggedInUser;
-        console.log(result)
+    
         return result
 
     }

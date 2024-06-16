@@ -3,7 +3,7 @@ import { getCurrentUser } from '../api';
 
 
 function useGetCurrentUser() {
-    const [currentUserLoggedIn, setCurrentUserLoggedIn]= useState({})
+    const [currentUserLoggedIn, setCurrentUserLoggedIn]= useState(null)
     const abortController = new AbortController();
 
     useEffect(()=>{
@@ -19,9 +19,9 @@ function useGetCurrentUser() {
     },[]);
 
     const user = useMemo (() => currentUserLoggedIn, [currentUserLoggedIn]);
-    console.log(currentUserLoggedIn)
+  
 
-    console.log(user)
+    
     return{currentUserLoggedIn, user}
 
   

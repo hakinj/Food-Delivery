@@ -33,8 +33,8 @@ function DashNav() {
 
                         <div className='mt-2.5 -ml-2 mr-2 ' style={{ borderLeft: 'solid black 2px ', height: '16px' }}></div>
 
-                        <div className='relative'><a className="navbar-brand -mt-1 " href="#"><AddShoppingCart/></a></div>
-                        <div className='absolute right-14  top-4 w-6 h-6 text-center bg-red-900 text-white ' style={{ border: '1px solid red', borderRadius: '50%' }}>{cart.length}</div>
+                        <div><div className='relative'><a className="navbar-brand -mt-1 " href="#"><AddShoppingCart/></a></div>
+                        <div className='absolute right-  top-2 w-6 h-6 text-center bg-red-900 text-white ' style={{ border: '1px solid red', borderRadius: '50%' }}>{cart.length}</div></div>
                        <div className='px-4'> <Link title='logout'><LogoutIcon/></Link></div>
                     </div>
 

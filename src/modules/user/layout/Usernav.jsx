@@ -29,9 +29,9 @@ function Usernav() {
 
                 <div className='flex'>
 
-                    <Link to='/loginpage'><b className="navbar-brand border-1 border-solid w-20 text-center rounded-xl -mt-1 hover:border-violet-700 hover:bg-violet-700 border-sky-500 bg-sky-500 " >Login</b></Link>
+                    <Link to='/loginpage'><b className="navbar-brand border-1 border-solid px-10 text-center rounded-xl -mt-1 hover:border-violet-700 hover:bg-violet-700 border-sky-500 bg-sky-500 " >Login</b></Link>
                     <div className='mt-2.5 -ml-2 mr-2 ' style={{borderLeft: 'solid white 2px ', height: '16px'}}></div>
-                    <Link to='/signup'><b className="navbar-brand -mt-1 border-1 border-solid w-20 text-center hover:border-violet-700 hover:bg-violet-700 rounded-xl border-sky-500 bg-sky-500 " >Signup</b></Link>
+                    <Link to='/signup'><b className="navbar-brand -mt-1 border-1 border-solid px-10 text-center hover:border-violet-700 hover:bg-violet-700 rounded-xl border-sky-500 bg-sky-500 " >Signup</b></Link>
                     
                        
                     

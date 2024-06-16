@@ -14,7 +14,7 @@ function ProtectRiderProvider({children}) {
         const {Rider} = useContext(CartContext)
         console.log(Rider)
         useEffect(()=>{
-            if(!Rider.name){
+            if(!Rider?.name){
                 navigate('/riderlogin');
             }
         
