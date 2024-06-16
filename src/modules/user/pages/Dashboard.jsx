@@ -12,7 +12,7 @@ import { useNavigate } from 'react-router-dom'
 
 function Dashboard() {
   const navigate = useNavigate()
-  const { cart, setCart } = useContext(CartContext)
+  const { cart, setCart, user } = useContext(CartContext)
   const [data, setData] = useState(null)
   const [delivery, setDelivery] = useState(0)
   const [subtotal, setSubtotal] = useState([])
@@ -89,6 +89,9 @@ function Dashboard() {
   return (
     <>
       <DashNav />
+      
+    <h6 className='px-6 -mt-10 mb-10 '>welcome: <b> {user?.firstname}</b></h6>
+    
       <div className=' px-8 h-auto flex  mb-6 '>
         <div className='border-solid border-slate-50 border-1 bg-slate-50  h-96 sticky  top-20 bottom-20 rounded-lg pl-10 pr-4 '>
           <h1>Menu</h1>

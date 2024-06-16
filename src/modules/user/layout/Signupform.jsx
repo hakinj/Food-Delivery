@@ -7,8 +7,11 @@ import { Link } from 'react-router-dom';
 
 
 
+
+
+
 function Signupform() {
-    const [isLoading, setIsloading] = useState(false)
+   
     const [state, dispatch] = useReducer(signUpreducer, {
         firstname: "",
         lastname: "",
@@ -20,23 +23,32 @@ function Signupform() {
     const navigate = useNavigate();
     const { signUp, userResponse } = useSignupUser()
 
+    const timeOut1 = () => {
+        setTimeout(() => {
+            setIsloading(false)
+        }, 7000)
+    }
+
     useEffect(()=>{
+      
         if (userResponse && userResponse.success) {
-           
-            navigate('/dashboard')
+            navigate('/signedsuccessful')
         }
+       
     },[userResponse, navigate])
 
     const submitForm = async (e) => {
         e.preventDefault()
-        setIsloading(true)
+   
         const res = await signUp(state)
-
-       
+        
     }
     
     
     return (
+        <>
+
+       
         <div>
             <div style={{ backgroundImage: `url("${image7}")` }} className='flex flex-column items-center bg-no-repeat bg-cover bg-center bg-fixed -mt-20 p-20'>
 
@@ -93,6 +105,7 @@ function Signupform() {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

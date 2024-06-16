@@ -21,6 +21,7 @@ import ProtectAdminProvider from './modules/context/ProtectAdminProvider';
 import ProtectRiderProvider from './modules/context/ProtectRiderProvider';
 import AdminDash from './modules/admin/pages/AdminDash';
 import RiderDash from './modules/rider/pages/RiderDash';
+import UserSignUpSuccess from './modules/user/layout/UserSignUpSuccess'
 
 
 
@@ -106,6 +107,10 @@ export const router = createBrowserRouter([
     {
         path: '/riderdashboard',
         element: <ProtectRiderProvider><RiderDash/></ProtectRiderProvider> 
+    },
+    {
+        path: '/signedsuccessful',
+        element: <UserSignUpSuccess/>
     }
 
 ])

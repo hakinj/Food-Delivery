@@ -1,10 +1,11 @@
 import React from 'react'
 import navlogo2 from '../../user/bgimage/navlogo2.jpg';
 import LogoutIcon from '@mui/icons-material/Logout';
-import { Link } from 'react-router-dom'
+import useLogoutAdmin from '../../auth/hooks/useLogoutAdmin'
 
 
 function AdminNavDash() {
+    const {logout} = useLogoutAdmin()
     return (
         < div style={{ marginBottom: '130px', }}>
 
@@ -35,7 +36,7 @@ function AdminNavDash() {
 
 
                     <div className=' pr-20'>
-                        <Link title='logout'><LogoutIcon /></Link>
+                        <LogoutIcon  title='logout' onClick={logout}/>
 
                     </div>
 

@@ -14,7 +14,7 @@ function AdminNav() {
 
                     <div>
                         <div className='flex line text-white none gap-20 '>
-                        <Link to='/adminsignup'><b>Home</b></Link>
+                        <Link to='/'><b>Home</b></Link>
                         <Link to='/loginpage'><b>User</b></Link>
                         <Link to='/ridersignup'><b>Rider</b></Link>
                             
@@ -34,11 +34,11 @@ function AdminNav() {
 
 
                     <div className='flex'>
-                        <a className="navbar-brand -mt-1 " href="#">Login</a>
+                    <Link to='/adminlogin'><button className="navbar-brand -mt-1 border-1 border-white px-8 rounded-xl  " >login</button></Link>
                     
-                    <div className='mt-2.5 -ml-2 mr-2 ' style={{borderLeft: 'solid white 2px ', height: '16px'}}></div>
+                    <div className='mt-2 -ml-2 mr-2 ' style={{borderLeft: 'solid white 2px ', height: '16px'}}></div>
                    
-                    <a className="navbar-brand -mt-1 " href="#">Signup</a>
+                    <Link to='/adminsignup'><button className="navbar-brand -mt-1 border-1 border-white px-6 rounded-xl Remtxt " >Signup</button></Link>
                     </div>
 
 
