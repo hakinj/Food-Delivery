@@ -61,7 +61,7 @@ export const router = createBrowserRouter([
     },
     {
         path: '/adminlogin',
-        element: <ProtectAdminProvider><AdminLogin/></ProtectAdminProvider>  
+        element: <AdminLogin/>  
     },
     {
         path: '/ridersignup',
@@ -70,7 +70,7 @@ export const router = createBrowserRouter([
     },
     {
         path: '/riderlogin',
-        element:  <ProtectRiderProvider><RiderLoginpage/></ProtectRiderProvider> 
+        element:  <RiderLoginpage/>
     },
     {
         path: '/foodtypeinputpage',
