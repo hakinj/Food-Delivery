@@ -1,6 +1,6 @@
 
 import axios from 'axios';
-const BASE_URL = "http://localhost:3200";
+const BASE_URL = "https://food-delivery-server-ug8j.onrender.com";
 
 
 

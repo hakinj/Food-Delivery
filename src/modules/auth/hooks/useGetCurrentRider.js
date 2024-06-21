@@ -3,7 +3,7 @@ import { getCurrentRider } from '../api';
 
 
 function useGetCurrentRider() {
-    const [currentRiderLoggedIn, setCurrentRiderLoggedIn]= useState({})
+    const [currentRiderLoggedIn, setCurrentRiderLoggedIn]= useState(null)
     const abortController = new AbortController();
 
     useEffect(()=>{

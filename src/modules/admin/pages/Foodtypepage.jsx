@@ -1,12 +1,12 @@
 import React from 'react'
 import Foodtypeform from '../layout/Foodtypeform'
-import AdminNav from '../layout/AdminNav'
+import AdminNavDash from '../layout/AdminNavDash'
 import Footer from '../../user/layout/Footer'
 
 function Foodtypepage() {
   return (
     <>
-    <AdminNav/>
+    <AdminNavDash/>
     <Foodtypeform/>
     <Footer/>
     </>

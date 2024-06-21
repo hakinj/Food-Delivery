@@ -179,7 +179,7 @@ function Dashboard() {
             <hr className='-mt-2' />
 
             <div className='flex justify-between'><p>amount payable</p>
-              <p>{totalPay}</p></div>
+              <p>₦{totalPay}</p></div>
 
 
             <div className=' flex justify-center '><button onClick={checkOut} type="button" className=" items-center btn btn-primary w-96">place order now</button></div>

@@ -10,11 +10,11 @@ function useGetCurrentUser() {
         const fetchCurrentUser = async ()=>{
             const response = await getCurrentUser();
             setCurrentUserLoggedIn(response);    
-        }
+        };
         fetchCurrentUser();
         return () => {
             abortController.abort();
-        }
+        };
 
     },[]);
 

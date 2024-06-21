@@ -11,7 +11,7 @@ function ProtectAdminProvider({children}) {
         const {Admin} = useContext(CartContext)
         console.log(Admin)
         useEffect(()=>{
-            if(!Admin?.name){
+            if(!Admin){
                 navigate('/adminlogin');
             }
         

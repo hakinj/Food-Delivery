@@ -24,7 +24,7 @@ useEffect(()=>{
     }
     
 },[loginResponse, navigate])
-console.log(loginResponse?.data?.error)
+
 
 
 

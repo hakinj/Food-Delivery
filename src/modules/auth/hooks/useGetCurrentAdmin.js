@@ -3,7 +3,7 @@ import { getCurrentAdmin } from '../api';
 
 
 function useGetCurrentAdmin() {
-    const [currentAdminLoggedIn, setCurrentAdminLoggedIn]= useState({})
+    const [currentAdminLoggedIn, setCurrentAdminLoggedIn]= useState(null)
     const abortController = new AbortController();
 
     useEffect(()=>{
